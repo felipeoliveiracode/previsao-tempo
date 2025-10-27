@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="main">
+            <div class="data">
+                <p class="data-day"></p>
+                <p class="data-hour">22:38</p>
+            </div>
+
+            <h1>Previsão do Tempo</h1>
+
+            <div class="input-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <label for="cidade" class="sr-only">Buscar cidade</label>
+                <input type="text" placeholder="Buscar cidade..." id="cidade">
+                <button id="buscar">Buscar</button>
+            </div>
+        </section>
+
+        <section class="loading hidden" role="status" aria-live="polite">
+            <div style="display:flex; align-items:center; gap:0.5rem; justify-content:center;">
+                <div class="loader" aria-hidden="true"></div>
+                <h2 aria-hidden="true">Carregando...</h2>
+                <span class="sr-only">Carregando dados meteorológicos</span>
+            </div>
+        </section>
+
+        <section class="weather-info hidden">
+
+            <div class="main-info">
+                <div>
+                    <h2 class="cidade"></h2>
+                    <p class="descricao"></p>
+                </div>
+
+                <div class="temperatura-info">
+                    <img class="icone" src="/assets/chuva.png" alt="">
+                    <div>
+                        <p class="temperatura"></p>
+                        <p>Sensação térmica: <span class="sensacao-termica"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-item">
+
+                <div class="info-item-content">
+                    <img width="60" height="60" src="https://img.icons8.com/stickers/60/dew-point.png"
+                        alt="dew-point" />
+                    <div>
+                        <p><b>Umidade:</b></p>
+                        <p class="umidade"></p>
+                    </div>
+                </div>
+
+                <div class="info-item-content">
+                    <img width="60" height="60" src="https://img.icons8.com/stickers/60/wind.png" alt="wind" />
+                    <div>
+                        <p><b>Vento:</b></p>
+                        <p class="vento"></p>
+                    </div>
+                </div>
+
+                <div class="info-item-content">
+                    <img width="60" height="60" src="https://img.icons8.com/stickers/60/barometer-gauge.png"
+                        alt="barometer-gauge" />
+                    <div>
+                        <p><b>Pressão:</b></p>
+                        <p class="pressao"></p>
+                    </div>
+                </div>
+
+                <div class="info-item-content">
+                    <img width="60" height="60" src="https://img.icons8.com/stickers/60/invisible.png"
+                        alt="invisible" />
+                    <div>
+                        <p><b>Visibilidade:</b></p>
+                        <p class="visibilidade"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="footer">Dados meteorológicos em tempo real • Atualizado agora</p>
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>
