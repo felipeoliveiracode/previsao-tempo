@@ -92,3 +92,8 @@ Sinta-se à vontade para usar e adaptar o código. Não inclui dependências ext
 ## Contato
 
 Se precisar que eu implemente alguma das melhorias (autocomplete, proteção da API, toasts, transições) — diga qual e eu aplico no projeto.
+
+Links úteis:
+
+- Deploy (GitHub Pages): https://felipeoliveiracode.github.io/previsao-tempo/
+- LinkedIn: https://www.linkedin.com/in/felipeoliveiracode/
